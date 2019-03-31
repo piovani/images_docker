@@ -1,0 +1,8 @@
+version: '3'
+
+volumes:
+  name_volume:
+    driver: local
+
+services:
+

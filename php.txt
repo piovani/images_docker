@@ -1,0 +1,9 @@
+  app:
+    image: ambientum/php:7.2-nginx
+    container_name: app
+    volumes:
+    - .:/var/www/app
+    ports:
+    - "8000:8080"
+    links:
+    - db
