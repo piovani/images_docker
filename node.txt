@@ -1,0 +1,9 @@
+  node:
+    image: node:slim
+    command: npm run dev --prefix code
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/code
+    links:
+    - db
