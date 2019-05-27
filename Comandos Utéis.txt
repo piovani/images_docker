@@ -1,0 +1,15 @@
+* docker ps
+    mostrar todos os containers
+
+* docker images
+    mostra as imagens docker na maquina, já baixadas
+
+* docker-compose up -d
+    irá executa a imagem, o '-d' para executar em backgroud, assim liberando o terminal
+
+* docker exec -it {{ NOME DA IMAGE }} bash
+    irá excutar um terminal dentro da imagem, que foi especificada pelo nome
+
+* docker-compose down
+    irá derrubar os containes rodando
+
