@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  laravel-app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/ngix
+    networks:
+      - app-network
+  
+  postgress:
+    image: postgres
+    ports:
+      - "5000:5000"
+    volumes:
+      - .docker/dbdata:/var/lib/postgres
+    environment:
+      POSTGRES_PASSWORD: secret
+    networks:
+      - app-network

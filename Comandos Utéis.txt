@@ -13,3 +13,10 @@
 * docker-compose down
     irá derrubar os containes rodando
 
+* docker-compose up -d --build
+    isso indica que o docker foi alterado.
+
+* network
+    é uma conexao entre os containers, as duas imagens precisam ter o essa conexao
+
+* 
